@@ -1,129 +1,135 @@
-# Hospital Management System
+# 🏥 Hospital Management System
 
-![Web capture_7-2-2024_8281_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/8814eb11-7876-46fd-8e42-ed5e574e3bbf)
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java Badge" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL Badge" />
+  <img src="https://img.shields.io/badge/Apache-CA2136?style=for-the-badge&logo=apache&logoColor=white" alt="Apache Badge" />
+  <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white" alt="Eclipse Badge" />
+</p>
 
+The **Hospital Management System** is a Java-based application designed to streamline and automate various processes within a medical facility. Leveraging the **Model-View-Controller (MVC)** architecture, this project ensures a modular and organized approach to efficient system management.
 
-The Hospital Management System is a Java-based application designed to streamline and automate various processes within a medical facility. Leveraging the Model-View-Controller (MVC) architecture, this project ensures a modular and organized approach to system development.
+---
 
-## MVC Architecture
+## 🌟 Features
 
-The Hospital Management System follows the MVC design pattern, which separates the application into three interconnected components:
+### 1️⃣ Authentication and Logging
+<p align="center">
+  <img src="https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/b4b6e9d3-9a9d-402b-b7a5-b26534a48f09" alt="Authentication" width="400"/>
+</p>
 
-- **Model**: Manages the data and business logic of the system. Includes functionalities for handling user authentication, appointment management, prescription creation, and medicine inventory.
+- **Secure Login**: Role-based access for patients, doctors, pharmacists, and admins.
+- **Action Logging**: Records all user actions for auditing purposes.
+- **Role-Based Access**: Permissions tailored to user roles.
 
-- **View**: Represents the user interface for different actors in the system, such as patients, doctors, pharmacists, and administrators.
+---
 
-- **Controller**: Acts as an intermediary, handling user inputs, processing requests, and updating both the Model and View accordingly.
+### 2️⃣ Appointment Management
 
-This separation of concerns enhances code organization, maintainability, and scalability, facilitating independent development and testing of each component.
+#### Patient Appointments
+<p align="center">
+  <img src="https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/afd0c81e-0347-498e-a2e5-a7244d95b859" alt="Patient Appointment" width="400"/>
+</p>
+- Schedule, update, or cancel appointments.
 
-## Technologies and Tools
+#### Doctor Appointments
+<p align="center">
+  <img src="https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/6d89c14a-88e5-4b3e-b22e-0281cb117343" alt="Doctor Appointment" width="400"/>
+</p>
+- View scheduled appointments.
+- Create and update prescriptions.
 
-- **Programming Language**: Java
-- **Web Server**: Apache
-- **Integrated Development Environment (IDE)**: Eclipse
-- **Database Management System**: MySQL
+---
 
-## Features
+### 3️⃣ Medicine Inventory Management
+<p align="center">
+  <img src="https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/96289884-a3d8-4b58-8a99-b4d7a32056ea" alt="Medicine Inventory" width="400"/>
+</p>
 
-### 1. Authentication and Logging
+- Pharmacists can add, update, and delete medicines in the inventory.
 
-![Web capture_7-2-2024_83110_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/b4b6e9d3-9a9d-402b-b7a5-b26534a48f09)
+---
 
-- **Secure Login**: Users are required to authenticate using secure login credentials.
-- **Role-based Access Control**: Access to different features is based on user roles (patient, doctor, pharmacist, admin).
-- **Logging**: All user actions and system events are logged for audit purposes.
-![Web capture_7-2-2024_82920_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/0692cae5-7aa3-4bbe-b912-6e6f21462410)
+### 4️⃣ User Management (Admin)
+<p align="center">
+  <img src="https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/7919a252-fb20-4187-80cd-2926ab055b5f" alt="Admin Management" width="400"/>
+</p>
 
-### 2. Appointment Management
+- Create, update, delete user accounts.
+- Search and view user details.
 
-- **Patient Appointments**:
-  - *Add Appointments*: Patients can schedule appointments with doctors.
-  ![Web capture_7-2-2024_83310_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/afd0c81e-0347-498e-a2e5-a7244d95b859)
-  ![Web capture_7-2-2024_83418_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/eef483b5-8029-40a3-a778-091957896ae5)
-  - *Update and Delete*: Patients can modify or cancel their appointments.
-  ![Web capture_7-2-2024_83335_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/cabbe926-6fd4-45e2-b1a6-07dcf2350062)
+---
 
-- **Doctor Appointments**:
-  - *View and Delete*: Doctors can view scheduled appointments and cancel them if necessary.
-  ![Web capture_7-2-2024_83649_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/8222f577-ba29-4339-aabc-f0bd44804499)
-  - *Prescription Creation*: Doctors can create prescriptions for appointments.
-  - *Prescription Updates*: Doctors can update existing prescriptions.
-  ![Web capture_7-2-2024_83723_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/c458968e-4850-45e5-a0a5-267973279ddf)
-  ![Web capture_7-2-2024_8411_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/6d89c14a-88e5-4b3e-b22e-0281cb117343)
+## 🛠️ Technologies Used
 
+### Backend
+- **Java**: Core programming language.
+- **Apache Server**: Backend server for handling requests.
+- **MySQL**: Database for managing system data.
 
-### 3. Medicine Inventory Management
+### Frontend
+- **JSP (Java Server Pages)**: For rendering dynamic web pages.
 
-- **Pharmacist Responsibilities**:
-  - *Add Medicines*: Pharmacists can Add details of medicines in the inventory.
-  ![Web capture_7-2-2024_84015_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/96289884-a3d8-4b58-8a99-b4d7a32056ea)
-  - *Update Medicines*: Pharmacists can update details of medicines in the inventory.
-  - *Delete Medicines*: Pharmacists can remove medicines from the inventory.
+### Development Tools
+- **Eclipse IDE**: For coding and project management.
 
-### 4. User Management (Admin)
+---
 
-- **Admin Privileges**:
-  - *Create Users*: Admins can create new user accounts.
-  ![Web capture_7-2-2024_8353_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/1af1050b-c412-4bf9-ad3c-a1c2ae00d45a)
+## 🗂️ Project Structure
 
-  - *View Users*: Admins can see a list of all users in the system.
-  - *Find Users*: Admins can search for specific users based on criteria.
-  - *Update Users*: Admins can modify user details.
-  - *Delete Users*: Admins can remove user accounts.
-  ![Web capture_7-2-2024_83549_localhost](https://github.com/dilrukshax/Online-Hospital-Management/assets/100220079/7919a252-fb20-4187-80cd-2926ab055b5f)
+### **MVC Architecture**
+- **Model**: Manages data and business logic (e.g., authentication, appointments).
+- **View**: Represents user interfaces (JSP files).
+- **Controller**: Handles user inputs and updates Models and Views.
 
-## Technologies Used
+### Additional Directories
+- **`web/WEB-INF`**: Configuration and JSP files.
+- **`sql/`**: SQL scripts for database setup.
 
-- **Cookies and Session Management**: Implemented for a seamless user experience and secure session handling.
+---
 
-## Development Environment
+## ⚙️ Installation
 
-- **IDE**: Eclipse is used as the primary Integrated Development Environment for coding and project management.
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/dilrukshax/hospital-management-system.git
+```
 
-- **Web Server**: Apache is utilized to serve the application, ensuring efficient communication between the client and server components.
+### 2️⃣ Import Project into Eclipse
+- Open Eclipse and import the project as an existing Maven project.
 
-- **Database**: MySQL serves as the backend database to store and manage the application's data.
+### 3️⃣ Configure Apache Server
+- Configure Apache to serve the application locally.
 
-## Project Structure
+### 4️⃣ Set Up the Database
+- Import SQL scripts into MySQL.
+- Update database credentials in the application.
 
-The project follows a modular structure for each MVC component:
+### 5️⃣ Run the Application
+- Launch the application from Eclipse and access it via:
+  [http://localhost:8080](http://localhost:8080)
 
-- **`src/main/java`**: Contains the Java source code.
-  - **`com.example.model`**: Classes representing data and business logic.
-  - **`com.example.view`**: Classes responsible for user interface components.
-  - **`com.example.controller`**: Classes handling user inputs and coordinating interactions between Model and View.
+---
 
-- **`web`**: Houses web-related files.
-  - **`WEB-INF`**: Configuration files, JSP files for views.
+## 🤝 Contribution
 
-- **`sql`**: SQL scripts for database setup and initialization.
+We welcome contributions to improve the project! Follow these steps:
 
-## Installation
-
-Follow these steps to set up the Hospital Management System on your local environment:
-
-1. Clone the repository:
-
+1. **Fork the Repository**.
+2. **Create a New Branch**:
    ```bash
-   git clone https://github.com/dilrukshax/hospital-management-system.git
+   git checkout -b feature-name
    ```
+3. **Commit Your Changes**:
+   ```bash
+   git commit -m "Added a new feature"
+   ```
+4. **Push Your Branch**:
+   ```bash
+   git push origin feature-name
+   ```
+5. Submit a **Pull Request** for review.
 
-2. Import the project into Eclipse.
+---
 
-3. Configure Apache to serve the application.
-
-4. Set up the MySQL database and update the database configuration in the application.
-
-5. Run the application and navigate to `http://localhost:your-port` in your web browser.
-
-For detailed installation instructions and troubleshooting, refer to the [Installation Guide](link-to-installation-guide).
-
-## Contribution
-
-We welcome contributions from the community! If you'd like to contribute to the Hospital Management System project, please follow our [Contribution Guidelines](link-to-contribution-guidelines).
-
-## License
-
-This project is licensed under the [MIT License](link-to-license).
-
+**Revolutionize healthcare management with the Hospital Management System!** 🏥
